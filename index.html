@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickman Clash</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud top-bar">
+        <div class="fighter-panel left">
+          <div class="name-row">
+            <span id="playerName">FLASH</span>
+            <span id="playerStyle">SPEED</span>
+          </div>
+          <div class="bars">
+            <div class="bar health"><span id="playerHealth"></span></div>
+            <div class="bar stamina"><span id="playerStamina"></span></div>
+            <div class="bar special"><span id="playerSpecial"></span></div>
+          </div>
+        </div>
+
+        <div class="center-ui">
+          <div id="comboText">COMBO 0</div>
+          <div id="roundText">ROUND 1</div>
+        </div>
+
+        <div class="fighter-panel right">
+          <div class="name-row">
+            <span id="enemyName">TITAN</span>
+            <span id="enemyStyle">STRENGTH</span>
+          </div>
+          <div class="bars">
+            <div class="bar health enemy"><span id="enemyHealth"></span></div>
+            <div class="bar stamina enemy"><span id="enemyStamina"></span></div>
+            <div class="bar special enemy"><span id="enemySpecial"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div class="controls-panel">
+        <div>Move: A/D or ←/→</div>
+        <div>Jump: W / ↑</div>
+        <div>Dash: Shift</div>
+        <div>Attack: J</div>
+        <div>Heavy: K</div>
+        <div>Kick: L</div>
+        <div>Block: S / ↓</div>
+        <div>Dodge: Space</div>
+        <div>Special: E</div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
